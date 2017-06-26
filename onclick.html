@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+        function msg()
+        {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var o=document.getElementById("op").value;
+            if(o=="add")
+                var c=parseInt(a)+parseInt(b);
+            if(o=="sub")
+                var c=parseInt(a)-parseInt(b);
+            if(o=="mul")
+                var c=parseInt(a)*parseInt(b);
+            if(o=="div")
+                var c=parseInt(a)/parseInt(b);
+            document.getElementById("d").innerHTML=c;
+            
+        }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <form>
+          enter first number<input type="text" id="n1">
+          <br>
+          enter second number<input type="text" id="n2">
+          <br>
+          <select name="operations" id="op">
+              <option value="add">ADD
+              <option value="sub">SUB
+              <option value="mul">MUL
+              <option value="div">DIV
+
+          </select>
+          <input type="button" value="ok" onclick="msg()">
+      </form>
+      <p id="d"></p>
+  </body>
+</html>
