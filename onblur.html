@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <script>
+          function msg()
+          {
+            var a=document.getElementById("n1").value;
+            var b=a.toUpperCase();
+            document.getElementById("n1").value=b;
+          }
+      </script>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    enter your name <input type="text" id="n1" onblur="msg()">
+  </body>
+</html>
